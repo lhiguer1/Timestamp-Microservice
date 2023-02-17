@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:3000/api
+
+### Date not provided; return current date
+GET {{baseUrl}} HTTP/1.1
+
+### Unix
+GET {{baseUrl}}/1451001600000 HTTP/1.1
+
+### ISO-8601
+GET {{baseUrl}}/2015-12-25 HTTP/1.1
+
+### Bad request
+GET {{baseUrl}}/BadDate HTTP/1.1
